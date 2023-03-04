@@ -56,8 +56,28 @@ def fland(x):
 
 k=filter(fland,countries)
 print(list(k))
-
 # Q11 Use filter to filter out countries having exactly six characters.
+def six_c(x):
+     if len(x)==7:
+          return True
+     return False
+xy=filter(six_c,countries)
+print(list(xy))
 
+# Use filter to filter out countries containing six letters and more in the country list.
+def six_c(x):
+     if len(x)>=7:
+          return True
+     return False
+xz=filter(six_c,countries)
+print(list(xz))
+
+# Use filter to filter out countries starting with an 'E'
+def e_c(x):
+     if x[0]=='E':
+          return True
+     return False
+zy=filter(e_c,countries)
+print(list(zy))
        
 
